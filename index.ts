@@ -1,12 +1,14 @@
- 
-
+var currentWeekNumber = require('current-week-number');
 
 class Scraper {
     currentWeekNumber: any;
     url: any;
-    let  url = "https://bistropol.simplycooking.dk/ugemenu/uge-"
-    let currentWeekNumber = require('current-week-number');
-    show_week{
-console.log(currentWeekNumber());
-    }
- }
+
+    set_url() {
+        this.url = "https://bistropol.simplycooking.dk/ugemenu/uge-";
+    };
+
+    show_week() {
+        console.log(this.currentWeekNumber());
+    };
+};
