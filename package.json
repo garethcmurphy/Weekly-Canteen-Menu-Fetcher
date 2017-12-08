@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "pretest": "tsc",
+    "test": "nyc mocha",
+    "watch": "mocha-typescript-watch",
+    "prepare": "tsc",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +19,8 @@
     "ts-node": "^3.3.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.56"
+    "@types/node": "^8.0.56",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
   }
 }
