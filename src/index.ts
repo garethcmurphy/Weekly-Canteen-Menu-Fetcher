@@ -1,4 +1,4 @@
-var currentWeekNumber = require('current-week-number');
+let currentWeekNumber = require('current-week-number');
 
 class Scraper {
     currentWeekNumber: any;
@@ -11,4 +11,6 @@ class Scraper {
     show_week() {
         console.log(this.currentWeekNumber());
     };
-};
+}
+
+export {Scraper};

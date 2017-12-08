@@ -1,5 +1,10 @@
+import 'mocha';
+
+import {expect} from 'chai'
 
 import {Scraper} from "../src/index";
+
+import {} from 'jasmine';
 
 
 describe('Access Token', () => {

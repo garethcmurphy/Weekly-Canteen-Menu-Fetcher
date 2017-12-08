@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "pretest": "tsc",
+    "pretest": "tsc",
     "test": "nyc mocha",
     "watch": "mocha-typescript-watch",
     "prepare": "tsc",
@@ -19,8 +19,11 @@
     "ts-node": "^3.3.0"
   },
   "devDependencies": {
+    "@types/jasmine": "^2.8.2",
     "@types/node": "^8.0.56",
+    "chai": "^4.1.2",
     "mocha": "^4.0.1",
+    "mocha-typescript": "^1.1.12",
     "nyc": "^11.3.0"
   }
 }
